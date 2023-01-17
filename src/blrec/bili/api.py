@@ -77,7 +77,7 @@ class AppApi(BaseApi):
         only_video: bool = False,
         only_audio: bool = False,
     ) -> ResponseData:
-        url = 'https://api.live.bilibili.com/xlive/app-room/v2/index/getRoomPlayInfo'  # noqa
+        url = 'http://apiov.bilirecord.icu/xlive/app-room/v2/index/getRoomPlayInfo'  # noqa
 
         params = self.signed({
             'actionKey': 'appkey',
